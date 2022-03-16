@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Luis C Marzal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 en menú</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENÚ SIN FLEX SIN ESPACIO PARA 4 CAJAS-->
+    <h1>SIN FLEX</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="indice1.html">Volver</a>
+            </li>
+            <li>
+                <a href="#">Atrévete</a>
+            </li>
+            <li>
+                <a href="#">Confiar</a>
+            </li>
+            <li>
+                <a href="#">Gracias</a>
+            </li>
+        </ul>
+    </nav>
+    <br />
+    <div>
+        Dispongo de un menú de una anchura de 1200px y tengo 4 cajas de 300px cada una, con sus respectivas separaciones
+        pero llega un momento en el que me doy cuenta de que una de las cajas no cabe y se cae a la siguiente línea, me falta espacio en el menú para que estén todas en la misma línea.<br>
+        Quiero dividir a partes iguales, trozos de las cajas para hacer que la cuarta caja pueda entrar.<br />
+        La primera caja va a mantener su tamaño, por ello no retiraré ninguna parte de ella, la segunda caja le voy a retirar 4 partes, la tercera le quitaré 2 
+        y la cuarta caja le retiraré una parte, por defecto se le retira una, por ello no es necesario aplicarlo.
+    </div>
+    <br />
+    <!-- MENÚ CON FLEX RETIRANDO PARTES DE LAS CAJAS -->
+    <h1>CON FLEX</h1>
+    <nav class="conFlex">
+        <ul>
+            <li id="caja1">
+                <a href="indice1.html">Volver</a>
+            </li>
+            <li id="caja2">
+                <a href="#">Atrévete</a>
+            </li>
+            <li id="caja3">
+                <a href="#">Confiar</a>
+            </li>
+            <li id="caja4">
+                <a href="#">Gracias</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

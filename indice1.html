@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Luis C Marzal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 en menú</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENÚ SIN FLEX CON ESPACIO SOBRANTE -->
+    <h1>SIN FLEX</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="indice2.html">Seguir</a>
+            </li>
+            <li>
+                <a href="#">Atrévete</a>
+            </li>
+            <li>
+                <a href="#">Confiar</a>
+            </li>
+        </ul>
+    </nav>
+    <br />
+    <div>
+        Dispongo de un menú de una anchura de 1200px y tengo 3 cajas de 300px cada una, con sus respectivas separaciones
+        pero llega un momento en el que me doy cuenta de que me sobra espacio en el menú.<br>
+        Quiero dividir ese espacio en 5 partes iguales, quiero que la primera caja, no cambie su tamaño, es decir, no coge espacio sobrante,
+        la segunda quiero que coja 3 y la última que coja 2 espacios sobrantes.
+    </div>
+    <br />
+    <!-- MENÚ CON FLEX UTILIZANDO EL ESPACIO SOBRANTE -->
+    <h1>CON FLEX</h1>
+    <nav class="conFlex">
+        <ul>
+            <li id="caja1">
+                <a href="indice2.html">Seguir</a>
+            </li>
+            <li id="caja2">
+                <a href="#">Atrévete</a>
+            </li>
+            <li id="caja3">
+                <a href="#">Confiar</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

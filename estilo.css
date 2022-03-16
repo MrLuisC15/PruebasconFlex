@@ -1,0 +1,60 @@
+/*
+    Luis C Marzal
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo general Nav */
+nav{
+    background-color: aquamarine;
+    width: 1200px;
+}
+
+/* Estilo de las cajas */
+nav ul li{
+    list-style-type: none;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    height: 100px;
+    display: inline-block;
+    background-color: yellow;
+}
+
+nav ul li a{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color:black;
+}
+
+/* Menú con FLEX */
+.conFlex ul{
+    display: flex;
+    
+}
+
+.conFlex ul #caja1{
+    flex-grow: 0; /* No coge espacios sobrantes */
+    flex-shrink: 0; /* No se le retiran partes */
+}
+.conFlex ul #caja2{
+    flex-grow: 3; /* Coge 3 espacios sobrantes */
+    flex-shrink: 4; /* Se le retiran 4 partes */
+}
+.conFlex ul #caja3{
+    flex-grow: 2; /* Coge 2 espacios sobrantes */
+    flex-shrink: 2; /* Se le retiran 2 partes */
+}
+.conFlex ul #caja4{
+    flex-shrink: 1; /* Se le retira 1 parte - Es el valor por defecto, no es necesario ponerlo */
+}
+
+div{
+    border:1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
